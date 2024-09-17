@@ -1,0 +1,131 @@
+*{
+    font-family: "Poppins", sans-serif;
+    z-index: 10;
+}
+.img{
+    overflow: hidden;
+}
+.img img{
+    transition: transform .25s, visibility .25s ease-in;
+}
+
+.img img:hover{
+    transform: scale(1.4);
+}
+
+.move{
+    background-color: green;
+    position: relative;
+    top: 17px;
+    left: 17px;
+}
+
+.move:hover{
+    background-color: rgb(204, 7, 7);
+    transition: all ease-out .25s;
+}
+
+nav a:last-child{
+    display: flex;
+}
+
+
+nav a:last-child span{
+    display: none;
+    padding: 0 5px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.679);
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+#cart_icon:hover{
+    cursor: pointer;
+}
+
+#cart_bill{
+    display: none;
+    width: 450px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+#cart_bill > div:first-child{
+    text-align: center;
+    padding: 25px 0;
+}
+
+#close_cart{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 18px;
+}
+
+#cart_bill > div:nth-child(2) > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .5px solid gray;
+    border-bottom: .5px solid gray;
+}
+
+#cart_bill > div:nth-child(2) > div{
+    margin: 0 15px;
+}
+
+#cart_bill > div:nth-child(2) > div > div:first-child {
+    margin: 20px;
+    padding: 8px;
+    border: .2px solid gray;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+#cart_bill > div:nth-child(2) > div > div:first-child img{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+#cart_bill > div:nth-child(2) > div > div:nth-child(2){
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+#cart_bill > div:nth-child(2) > div > div:nth-child(3){
+    margin: 10px;
+    margin-right: 0;
+}
+
+#cart_bill > div:nth-child(2) > div > div:nth-child(4){
+    margin: 10px;
+}
+
+#cart_bill > div:nth-child(2) > div > div:nth-child(2) input{
+    width: 50px;
+    outline: none;
+    padding-left: 5px;
+}
+
+#cart_bill > div:nth-child(3){
+    text-align: end;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#cart_bill > div:nth-child(4){
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
